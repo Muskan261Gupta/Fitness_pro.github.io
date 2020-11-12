@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+CSS rules to specify families
+<style>
+    body {
+        font-family: 'Goldman', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('https://i.pinimg.com/736x/6c/61/9f/6c619f585b8a5577167f1978f50f3db2.jpg');
+    }
+
+    .left {
+        position: absolute;
+        top: 20px;
+        left: 60px;
+        /* border: 2px solid yellow; */
+        display: inline;
+        color: white;
+    }
+
+    .left img {
+        width: 130px;
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 26px;
+        line-height: 9px;
+    }
+
+    .mid {
+        /* border: 2px solid red; */
+        display: block;
+        margin: 4px auto;
+        width: 39%;
+        top: 0px;
+    }
+
+    .right {
+        position: absolute;
+        top: 36px;
+        right: 34px;
+        /* border: 2px solid green; */
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        /* font-size: 25px; */
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: medium;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: tomato;
+    }
+
+    .btn {
+        font-family: 'Goldman', cursive;
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 8px 17px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 134px 171px;
+        padding: 65px 51px;
+        width: 40%;
+        border-radius: 15px;
+
+    }
+    .container h1{
+        color: white;
+        text-align: center;
+    }
+    .formgrp input{
+        font-family: 'Goldman', cursive;
+        text-align: center;
+        display: block;
+        width: 280px;
+        border: 2px solid black;
+        border-radius: 15px;
+        padding:5px;
+        margin: 6px auto;
+        font-size: 15px;
+    }
+    .container button{
+        width: 48%;
+        margin: 20px auto;
+        display: block;
+        font-size: smaller;
+    }
+</style>
+
+<body>
+    <!-- <img src="https://mennohenselmans.com/wp-content/uploads/2015/01/The-natural-muscular-potential-of-women.jpg" alt="" height="1000px">     -->
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="https://cdn5.vectorstock.com/i/1000x1000/99/64/barbell-with-text-on-black-background-logo-for-you-vector-22509964.jpg"
+                alt="">
+            <div>Fitness Gym</div>
+        </div>
+        <!-- mid for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">FITNESS CALCULATOR</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">CALL US NOW</button>
+            <button class="btn">EMAIL US</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the Classic Gym of Meerut. </h1>
+        <form action="noaction.php">
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your name ">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your Age ">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your Locality ">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your Phone.No ">
+            </div>
+        </form>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+
+</html>
